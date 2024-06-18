@@ -1,0 +1,84 @@
+/* Reset CSS */
+
+/* Elimina el margen y el padding de todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configura el tamaño de fuente en todos los elementos HTML */
+html {
+    font-size: 100%;
+}
+
+/* Configura las características de tipografía básicas en el body */
+body {
+    line-height: 1;
+    color: #000;
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+/* Elimina las decoraciones de los enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Elimina la lista de estilos de los listados */
+ul, ol {
+    list-style: none;
+}
+
+/* Establece las propiedades de los elementos de bloque */
+article, aside, footer, header, nav, section {
+    display: block;
+}
+
+/* Elimina las decoraciones y efectos en imágenes */
+img {
+    border: 0;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Configura las propiedades de los botones y formularios */
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+/* Configura el diseño de los elementos de tabla */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Elimina los bordes de los campos de formulario en navegadores móviles */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Configura el diseño de los campos de formulario en navegadores móviles */
+input[type="search"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Elimina el estilo de enfoque de los enlaces */
+a:focus {
+    outline: none;
+}
+
+/* Elimina el estilo de enfoque de todos los elementos cuando se navega con el teclado */
+:focus {
+    outline: none;
+}
