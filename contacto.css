@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #471717;
+    color: bisque;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.encabezado h1, .encabezado h2 {
+    margin: 0;
+}
+
+.div1 {
+    margin: 20px 0;
+}
+
+.div1 .subtitulo {
+    font-size: 1.5em;
+}
+
+main {
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+main h3, main h4 {
+    margin-bottom: 20px;
+}
+
+.formulario div {
+    margin-bottom: 15px;
+}
+
+.formulario input {
+    background-color: rgb(241, 232, 222);
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 1px 5px 6px;
+}
+
+.formulario button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 4px #333;
+}
+
+.formulario button:hover {
+    background-color: #993434;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header img {
+        max-width: 100px;
+    }
+
+    .div1 .subtitulo {
+        font-size: 1.2em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .formulario input, .formulario button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        max-width: 80px;
+    }
+
+    .div1 .subtitulo {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .formulario input, .formulario button {
+        width: 100%;
+    }
+}

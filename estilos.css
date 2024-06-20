@@ -1,118 +1,192 @@
-body{
-   background-color: rgb(231, 231, 227);
+/* estilos.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e2dfdf;
+    color:  #471717;
+    padding: 20px;
 }
 
-#Encabezado{
-    width: 100%;
-    background-color: rgb(71, 23, 23);
-   display: flex;
-   padding: 1em;
-   flex-direction: row;
-   justify-content: center;
-}
-.Left{
-    width: 9%;
-    position: absolute;
-    left: 0.5%;
-    top: 0.5em;
-}
-
-
-#principal{
-    font-size: 2em;
+header {
+    background: #471717;
     color: bisque;
-   
+    padding: 20px 0;
+    text-align: center;
 }
 
-#Secundario{
-    font-size: 1.5em;
-    color: bisque;
-
+header img.logo {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
 }
 
-span{
-    font-size: 1.3em;
-    margin: 1em;
-   
+header h1 {
+    margin-bottom: 10px;
 }
-#menu1{
-    width: 100%;
-    background-color: rgb(151, 142, 129);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-
+header h3 {
+    margin-bottom: 10px;
 }
 
-span:hover{
-    font-style: oblique;
-  
+header nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.Titulo{
-    font-size: 1.5em;color: rgb(161, 7, 7);
-    margin-left: 27%;
-    margin-top: 2em;
-    margin-bottom: 1em;
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
 }
 
-.subtitulo{
+header nav ul li a {
+    color: #c2bea7;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration-color: rgb(235, 223, 223);
+    text-decoration-line: underline;
+}
+
+main {
+    margin: 20px 0;
+}
+#logoHorse {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+section {
+    background:#e2dfdf;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section h2 {
+    margin: 0 auto 5px auto;
+}
+section h3.titulo {
+    margin: 1em auto 2em auto;
+}
+section p {
+    margin-bottom: 20px;
+}
+.subtitulo {
     font-size: 1em;
-    color: rgb(84, 26, 26);
 }
 
-.Logo{
-    width: 100px;
-
-}
-
-p{
-    margin-top: 1em;
-    margin-left: 2em;
-    margin-bottom: 1em;
-    margin-right: 2em;
-}
-
-
-.Card:hover{
-    background-color: rgb(208, 199, 199);
-    zoom: 1.5;
-}
-
-
-.Foto{
-    width: 250px;
-}
-
-#contenedor-fotos{
-    background-color: rgb(151, 142, 129);
-    width: 100%;
-    margin: auto;
-    margin-top: 1.5em;
-    padding: 1em;
+#contenedor-fotos {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
-.Card{
-    width: fit-content;
-    padding: 1em 1em 1em 1em;
+
+.Card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 40px);
+    max-width: calc(25% - 40px);
+    text-align: center;
     transition: 1s;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    align-items: center;
-
 }
 
-#pie{
-    font-style: italic;
-    font-size: 1.5em;
-    color:rgb(98, 88, 74); ;
-    margin-top: 1em;
-    margin-left: 2em;
-    margin-bottom: 1em;
+.Card:hover {
+    background-color: rgb(245, 223, 196);    
+}
 
+.Card img.Foto {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+
+footer {
+    background:  #471717;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+footer .social.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .social-button-facebook, footer .social-button-instagram {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #3b5998; /* Color de fondo para Facebook */
+}
+
+footer .social-button-instagram {
+    background-color: #E1306C; /* Color de fondo para Instagram */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .Card {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .Card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
