@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -14,14 +14,14 @@ header {
     background-color: #471717;
     color: bisque;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
 header img {
     max-width: 150px;
     height: auto;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .encabezado h1, .encabezado h2 {
@@ -29,11 +29,12 @@ header img {
 }
 
 .div1 {
-    margin: 20px 0;
+    margin:30px 0 0;
 }
 
 .div1 .subtitulo {
     font-size: 1.5em;
+    text-decoration: underline;
 }
 
 main {
@@ -77,6 +78,51 @@ main h3, main h4 {
 
 .formulario button:hover {
     background-color: #993434;
+}
+footer {
+    background: #f4f4f4;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 10px;
+}
+
+footer .social.buttons {
+    background-color:  #f4f4f4;;
+    max-width: 800px;
+    margin: 0 auto 10px auto;
+}
+
+footer .social.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 10px 0 10px;
+}
+
+footer .social-button-facebook, footer .social-button-instagram, footer .social-button-Home {
+    box-shadow: 2px 4px 8px #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    background-color: #3b5998; /* Color de fondo para Facebook */
+}
+footer .social-button-facebook:hover {
+    text-decoration: underline;
+}
+footer .social-button-instagram:hover {
+    text-decoration: underline;
+}
+footer .social-button-Home:hover {
+    text-decoration: underline;
+}
+
+footer .social-button-instagram {
+    background-color: #E1306C; /* Color de fondo para Instagram */
+}
+footer .social-button-Home {
+    background-color:  #471717;
 }
 
 /* Estilos responsivos */
